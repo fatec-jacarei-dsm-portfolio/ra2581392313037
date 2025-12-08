@@ -121,7 +121,7 @@ body {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 caixinhas lado a lado */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas -> 3x2 com 6 projetos */
     gap: 30px;
     margin-top: 30px;
 }
@@ -174,7 +174,7 @@ body {
     }
 
     .projects-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 caixinhas lado a lado */
+        grid-template-columns: repeat(2, 1fr); /* 2 caixinhas lado a lado no mobile */
     }
 
     .project-card {
@@ -182,9 +182,13 @@ body {
     }
 }
 
-/* Link de Saiba Mais */
+/* Link do GitHub na página de contato */
 .Github {
     color: #fb6178;
     text-decoration: none;
     font-weight: bold;
+}
+
+.Github:hover {
+    text-decoration: underline;
 }
