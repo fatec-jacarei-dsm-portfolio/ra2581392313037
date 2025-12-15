@@ -1,6 +1,7 @@
-# Portfólio de Projetos - Fatec Jacareí
+# Portfólio de Projetos – Fatec Jacareí
 
-Este repositório reúne os principais projetos desenvolvidos ao longo da minha trajetória acadêmica na Fatec Jacareí, com foco em aplicações práticas e soluções criativas no curso de Desenvolvimento de Software Multiplataforma.
+Este repositório reúne meus principais projetos acadêmicos desenvolvidos ao longo da minha trajetória no curso de **Desenvolvimento de Software Multiplataforma (DSM)** da Fatec Jacareí.  
+O objetivo é demonstrar minha evolução técnica, criatividade e aplicação prática dos conhecimentos adquiridos em cada semestre.
 
 ## 👩‍💻 Sobre a Aluna
 
@@ -13,6 +14,13 @@ Este repositório reúne os principais projetos desenvolvidos ao longo da minha 
 ## 📌 Objetivo
 
 Demonstrar minha evolução técnica, acadêmica e criativa no desenvolvimento de software ao longo do curso.
+
+## 🌐 Portfólio Online
+
+Você pode acessar meu portfólio completo no link abaixo, onde apresento os projetos de forma visual e interativa:
+
+👉 **Portfólio:**  
+https://fatec-jacarei-dsm-portfolio.github.io/ra2581392313037/
 
 ## 🎥 Demonstração
 
