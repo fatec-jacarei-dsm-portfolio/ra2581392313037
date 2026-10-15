@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Larissa Candido: design de interfaces, desenvolvimento web e projetos acadêmicos de DSM na Fatec Jacareí.">
+  <meta name="theme-color" content="#f3e8cf">
+  <title>Larissa Candido · Design & Desenvolvimento</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <h1>Meu Portfólio</h1>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="pages/about.html">Sobre</a></li>
-                <li><a href="pages/projects.html">Projetos</a></li>
-                <li><a href="pages/contact.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="home">
-        <div class="home-content">
-            <h1>Bem-vindo ao meu portfólio!</h1>
-            <p>
-                Olá! Sou <strong>Larissa</strong>, estudante de <strong>Desenvolvimento de Software Multiplataforma (DSM)</strong> na Fatec Jacareí.
-                Aqui, você encontrará um pouco sobre minha trajetória, projetos e habilidades na área de tecnologia.
-            </p>
-            <p>
-                Sou apaixonada por <strong>desenvolvimento web e mobile</strong>, sempre buscando criar soluções intuitivas e inovadoras.
-                Navegue pelo site e conheça mais sobre meu trabalho!
-            </p>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Larissa Candido, início">larissa<span> ✳</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> DESIGN + DESENVOLVIMENTO</p>
+        <h1 id="hero-title">Oi, eu sou<br><em>a Larissa.</em></h1>
+        <p class="intro">Sou estudante de DSM na Fatec Jacareí. Gosto de desenhar interfaces e desenvolver o front-end. Aqui reuni os projetos que fiz em equipe durante o curso.</p>
+        <a class="button" href="#projetos">Conheça meus projetos <span aria-hidden="true">↗</span></a>
+        <div class="hero-meta"><span>Ingresso · 1º sem. 2023</span><span>DSM · 6º semestre</span></div>
+      </div>
+      <div class="portrait-composition">
+        <span class="portrait-spark" aria-hidden="true">✳</span>
+        <figure class="portrait-card">
+          <img src="assets/profile.jpeg" alt="Larissa Candido" width="1170" height="1170" fetchpriority="high">
+          <figcaption>Larissa Candido <span>design & código</span></figcaption>
+        </figure>
+        <span class="portrait-note">design, ilustração<br>e desenvolvimento.</span>
+        <span class="portrait-orbit" aria-hidden="true">✧</span>
+      </div>
+    </section>
+    <div class="interest-strip" aria-label="Áreas de interesse"><span>DESENVOLVIMENTO WEB</span><span aria-hidden="true">✳</span><span>DESIGN DE INTERFACES</span><span aria-hidden="true">✳</span><span>EXPERIÊNCIAS MOBILE</span><span aria-hidden="true">✳</span><span>CRIATIVIDADE</span></div>
+    <section class="about wrap section" id="sobre" aria-labelledby="about-title">
+      <div><p class="eyebrow">01 / SOBRE MIM</p><h2 id="about-title">Um pouco<br><em>sobre mim.</em></h2><p class="handwritten">do desenho das telas ao front-end.</p></div>
+      <div class="about-copy">
+        <p>Entrei na Fatec Jacareí no <strong>1º semestre de 2023</strong> e estou no <strong>6º semestre de Desenvolvimento de Software Multiplataforma</strong>. Tenho interesse em desenvolvimento web e mobile, principalmente na parte de interfaces.</p>
+        <p>Gosto de design e ilustração. Nos trabalhos do curso, minha participação tem sido desenhar telas no Figma e desenvolver partes do front-end. É a área em que mais gosto de trabalhar e que quero seguir estudando.</p>
+        <p>Quero me aprofundar no desenvolvimento de interfaces e aprender mais sobre como tornar os sistemas fáceis de usar.</p>
+        <div class="skills" aria-label="Conhecimentos e interesses"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Design de interfaces</span><span>Ilustração</span></div>
+      </div>
+    </section>
+    <section class="projects-section section" id="projetos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / MEUS PROJETOS</p><h2 id="projects-title">Projetos feitos <em>em equipe.</em></h2></div><p>Os trabalhos do curso<br>e a minha participação em cada um.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar projetos por categoria" hidden><button type="button" data-filter="academico" aria-pressed="true">Acadêmicos <span>06</span></button><button type="button" data-filter="profissional" aria-pressed="false">Profissionais</button><button type="button" data-filter="pessoal" aria-pressed="false">Pessoais</button></div>
+        <div class="project-grid" id="project-list">
+          <article class="project-card" data-category="academico">
+            <div class="project-visual matcha"><img src="assets/project1.png" alt="Imagem do projeto Scrumer Data" loading="lazy" width="600" height="400"><span class="semester">1DSM · 1º sem. 2023</span></div>
+            <div class="project-content"><p class="project-number">01 / PROJETO ACADÊMICO</p><h3>Scrumer Data</h3><p>Site de treinamento em Scrum, com explicações sobre a metodologia e exemplos de sua aplicação em projetos de TI.</p><div class="contribution"><h4>Minha contribuição</h4><p>Desenhei telas no Figma e desenvolvi algumas páginas do site.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li></ul><a class="project-link" href="https://github.com/ScrumerDataAPI/API" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" data-category="academico">
+            <div class="project-visual strawberry"><img src="assets/project2.png" alt="Imagem do projeto Bike4Us" loading="lazy" width="600" height="400"><span class="semester">2DSM · 2º sem. 2023</span></div>
+            <div class="project-content"><p class="project-number">02 / PROJETO ACADÊMICO</p><h3>Bike4Us</h3><p>Plataforma para conectar quem tem uma bicicleta disponível com quem quer alugá-la, com anúncios, busca e avaliações.</p><div class="contribution"><h4>Minha contribuição</h4><p>Participei do design das interfaces no Figma e do desenvolvimento de páginas do front-end.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul><a class="project-link" href="https://github.com/joaoprocopio/bike4us" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" data-category="academico">
+            <div class="project-visual cream"><img src="assets/project3.png" alt="Imagem do projeto Vintura" loading="lazy" width="600" height="400"><span class="semester">3DSM · 1º sem. 2024</span></div>
+            <div class="project-content"><p class="project-number">03 / PROJETO ACADÊMICO</p><h3>Vintura</h3><p>Sistema de gestão de projetos de geoprocessamento para a Visiona. A proposta é organizar tarefas, acompanhar o progresso e reunir os feedbacks da equipe.</p><div class="contribution"><h4>Minha contribuição</h4><p>Criei o design das telas no Figma e implementei partes do front-end.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul><a class="project-link" href="https://github.com/Our-team-fatec/API-2024_1-Documentacao" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" data-category="academico">
+            <div class="project-visual strawberry"><img src="assets/project4.png" alt="Imagem do projeto Da Vinci Care" loading="lazy" width="600" height="400"><span class="semester">4DSM · 2º sem. 2024</span></div>
+            <div class="project-content"><p class="project-number">04 / PROJETO ACADÊMICO</p><h3>Da Vinci Care</h3><p>Aplicativo voltado ao acompanhamento da alimentação, com proposta de dietas personalizadas ou predefinidas e registro diário de alimentos e calorias.</p><div class="contribution"><h4>Minha contribuição</h4><p>Trabalhei na revisão do design das telas no Figma e no desenvolvimento das interfaces.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul><a class="project-link" href="https://github.com/Our-team-fatec/API-2024_2-Documentacao" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" data-category="academico">
+            <div class="project-visual matcha"><img src="assets/project5.png" alt="Imagem do projeto Scar" loading="lazy" width="600" height="400"><span class="semester">5DSM · 1º sem. 2025</span></div>
+            <div class="project-content"><p class="project-number">05 / PROJETO ACADÊMICO</p><h3>Scar</h3><p>Sistema para mapear áreas atingidas por queimadas a partir de imagens de satélites. O projeto reúne visualização de mapas e processamento de imagens para identificar cicatrizes de fogo.</p><div class="contribution"><h4>Minha contribuição</h4><p>Fiz o design do projeto no Figma e desenvolvi telas e componentes do front-end.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>React</li><li>TypeScript</li><li>Leaflet</li><li>Node.js</li><li>Fastify</li><li>PostgreSQL</li><li>Python</li></ul><a class="project-link" href="https://github.com/Our-team-fatec/API-2025_1-Documentacao" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" data-category="academico">
+            <div class="project-visual cream"><img src="assets/project6.png" alt="Imagem do projeto Da Vinci Pets" loading="lazy" width="600" height="400"><span class="semester">6DSM · 2º sem. 2025</span></div>
+            <div class="project-content"><p class="project-number">06 / PROJETO ACADÊMICO</p><h3>Da Vinci Pets</h3><p>Aplicativo voltado à adoção de animais, com cadastro de pets, anúncios de adoção e proposta de carteirinha digital para identificação.</p><div class="contribution"><h4>Minha contribuição</h4><p>Criei e ajustei o design no Figma e participei do desenvolvimento das interfaces.</p></div><p class="tech-label">Tecnologias do projeto</p><ul class="tech"><li>React Native</li><li>Expo</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li></ul><a class="project-link" href="https://github.com/Our-team-fatec/ABP-2025_2-Documentacao" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div>
+          </article>
         </div>
-    </main>
-
-
-    <script src="script.js"></script>
+        <p class="empty-state" role="status" hidden></p>
+        <noscript><p class="category-note">Profissionais e pessoais: ainda não há projetos publicados nessas categorias.</p></noscript>
+      </div>
+    </section>
+    <section class="contact section wrap" id="contato" aria-labelledby="contact-title"><p class="eyebrow">03 / CONTATO</p><h2 id="contact-title">Você me encontra<br><em>por aqui.</em></h2><p>Para conversar sobre projetos ou acompanhar o que estou desenvolvendo:</p><div class="social-links"><a href="https://github.com/larissaxyz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/larissa-candido-70b199298/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><span class="contact-star" aria-hidden="true">✳</span></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#inicio">larissa<span> ✳</span></a><p>Portfólio de Larissa Candido.</p><span>Fatec Jacareí · DSM</span></footer>
 </body>
 </html>
