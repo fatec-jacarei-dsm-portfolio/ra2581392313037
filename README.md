@@ -13,9 +13,6 @@
 
 ---
 
-**Vídeos de Apresentação**
+**Vídeo de Apresentação**
 
-🎤 2DSM - inserir link do vídeo aqui  
-🎤 4DSM - inserir link do vídeo aqui  
-🎤 6DSM - inserir link do novo vídeo aqui
-
+🎤 Inserir link do vídeo de apresentação aqui.
